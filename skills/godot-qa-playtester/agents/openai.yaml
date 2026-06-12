@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot QA Playtester"
+  short_description: "Verify gameplay with independent evidence"
+  default_prompt: "Use $godot-qa-playtester to independently verify this milestone against its criteria."

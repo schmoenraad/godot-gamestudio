@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Technical Artist"
+  short_description: "Build shaders, VFX, imports, and budgets"
+  default_prompt: "Use $godot-technical-artist to implement and verify this technical-art deliverable."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Gamestudio"
+  short_description: "Supervise specialist Godot production loops"
+  default_prompt: "Use $godot-gamestudio build to plan, create, review, and verify this Godot milestone."

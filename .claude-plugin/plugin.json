@@ -1,0 +1,13 @@
+{
+  "name": "godot-gamestudio",
+  "version": "0.2.0",
+  "description": "A supervised multi-agent studio loop for planning, building, reviewing, and verifying Godot games.",
+  "author": {
+    "name": "Koenraad",
+    "url": "https://github.com/schmoenraad"
+  },
+  "repository": "https://github.com/schmoenraad/godot-gamestudio",
+  "license": "Apache-2.0",
+  "keywords": ["godot", "game-development", "agent-skills", "multi-agent", "visual-qa"],
+  "skills": "./skills/"
+}

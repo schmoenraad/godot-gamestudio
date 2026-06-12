@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Code Reviewer"
+  short_description: "Review correctness, regressions, and tests"
+  default_prompt: "Use $godot-code-reviewer to independently review these Godot implementation changes."

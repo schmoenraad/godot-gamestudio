@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Performance Reviewer"
+  short_description: "Review measured rendering and runtime cost"
+  default_prompt: "Use $godot-performance-reviewer to independently review this technical-art performance."

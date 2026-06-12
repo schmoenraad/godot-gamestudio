@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Creative Director"
+  short_description: "Align story, mechanics, world, and visuals"
+  default_prompt: "Use $godot-creative-director to review this milestone for cross-discipline creative coherence."

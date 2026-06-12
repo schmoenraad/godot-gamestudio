@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Audio Designer"
+  short_description: "Design native Godot audio behavior"
+  default_prompt: "Use $godot-audio-designer to define and integrate this Godot audio deliverable."

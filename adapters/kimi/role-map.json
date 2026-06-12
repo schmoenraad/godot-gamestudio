@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "roles": {
+    "godot-creative-director": {
+      "built_in_agent": "explore",
+      "instructions": "Review cross-discipline coherence without editing files. Return conflicts, blocking decisions, and a prioritized decision memo. Preserve the user's established direction.",
+      "read_only": true
+    },
+    "godot-game-designer": {
+      "built_in_agent": "coder",
+      "instructions": "Own the game-design deliverable and measurable player outcomes. Stay within assigned paths and make the design engine-ready.",
+      "read_only": false
+    },
+    "godot-narrative-designer": {
+      "built_in_agent": "coder",
+      "instructions": "Own narrative deliverables with stable IDs, conditions, effects, localization hooks, and Godot integration notes.",
+      "read_only": false
+    },
+    "godot-world-builder": {
+      "built_in_agent": "coder",
+      "instructions": "Own world and level deliverables. Preserve gameplay data separately from baked visuals and verify traversal in the running scene.",
+      "read_only": false
+    },
+    "godot-sprite-studio": {
+      "built_in_agent": "coder",
+      "instructions": "Own visual asset deliverables. Verify frame geometry, consistency, transparency, imports, and runtime presentation.",
+      "read_only": false
+    },
+    "godot-gameplay-engineer": {
+      "built_in_agent": "coder",
+      "instructions": "Own implementation deliverables, make scoped edits, preserve project conventions, and run relevant Godot checks.",
+      "read_only": false
+    },
+    "godot-technical-artist": {
+      "built_in_agent": "coder",
+      "instructions": "Own technical-art deliverables. Verify visual output, imports, tunability, and measured performance implications.",
+      "read_only": false
+    },
+    "godot-ui-ux-designer": {
+      "built_in_agent": "coder",
+      "instructions": "Own UI and UX deliverables. Verify keyboard, controller, focus, scaling, safe areas, and readability in the running game.",
+      "read_only": false
+    },
+    "godot-audio-designer": {
+      "built_in_agent": "coder",
+      "instructions": "Own audio deliverables. Prefer Godot AudioServer buses unless established middleware exists, and provide an audition plan.",
+      "read_only": false
+    },
+    "godot-qa-playtester": {
+      "built_in_agent": "coder",
+      "instructions": "Do not implement the feature under test. Run the smallest sufficient verification suite and report pass, fail, or inconclusive with exact evidence.",
+      "read_only": true
+    },
+    "godot-systems-critic": {
+      "built_in_agent": "explore",
+      "instructions": "Review independently without editing files or expanding scope. Return evidence-backed findings and a verdict.",
+      "read_only": true
+    },
+    "godot-narrative-editor": {
+      "built_in_agent": "explore",
+      "instructions": "Review independently without maker reasoning or edits. Check voice, state logic, consequence tracking, and implementation readiness.",
+      "read_only": true
+    },
+    "godot-level-design-reviewer": {
+      "built_in_agent": "explore",
+      "instructions": "Review the playable scene independently. Do not edit files. Return reproduction evidence and a verdict tied to acceptance criteria.",
+      "read_only": true
+    },
+    "godot-animation-reviewer": {
+      "built_in_agent": "explore",
+      "instructions": "Review independently without edits. Check every relevant frame and the in-engine animation, then return concrete evidence and a verdict.",
+      "read_only": true
+    },
+    "godot-code-reviewer": {
+      "built_in_agent": "explore",
+      "instructions": "Review independently. Findings lead, ordered by severity, with file references. Do not edit files or read maker reasoning.",
+      "read_only": true
+    },
+    "godot-art-consistency-reviewer": {
+      "built_in_agent": "explore",
+      "instructions": "Review final assets and runtime captures independently. Do not edit files. Report concrete inconsistencies against established direction.",
+      "read_only": true
+    },
+    "godot-ui-accessibility-reviewer": {
+      "built_in_agent": "explore",
+      "instructions": "Review the live interface independently. Do not edit files. Return reproduction steps, evidence, severity, and a verdict.",
+      "read_only": true
+    },
+    "godot-performance-reviewer": {
+      "built_in_agent": "explore",
+      "instructions": "Measure before concluding. Review independently without edits and distinguish confirmed regressions from plausible risks.",
+      "read_only": true
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Game Designer"
+  short_description: "Design playable systems and progression"
+  default_prompt: "Use $godot-game-designer to turn this idea into an engine-ready gameplay specification."

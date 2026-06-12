@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Art Consistency Reviewer"
+  short_description: "Review visual cohesion and import quality"
+  default_prompt: "Use $godot-art-consistency-reviewer to independently review these visual assets."

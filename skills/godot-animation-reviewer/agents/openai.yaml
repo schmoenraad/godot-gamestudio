@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Animation Reviewer"
+  short_description: "Review frames, timing, loops, and playback"
+  default_prompt: "Use $godot-animation-reviewer to independently review this animation deliverable."

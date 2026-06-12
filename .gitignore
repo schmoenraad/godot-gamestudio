@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+dist/
+tests/fixtures/**/.godot/
+tests/fixtures/**/artifacts/*.png
+tests/fixtures/**/artifacts/*.webp
+evals/results/

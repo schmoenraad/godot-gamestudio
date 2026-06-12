@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Gameplay Engineer"
+  short_description: "Implement focused Godot gameplay systems"
+  default_prompt: "Use $godot-gameplay-engineer to implement and verify this gameplay deliverable."

@@ -1,0 +1,18 @@
+{
+  "name": "godot-gamestudio",
+  "version": "0.2.0",
+  "description": "A supervised multi-agent studio loop for planning, building, reviewing, and verifying Godot games.",
+  "keywords": ["godot", "game-development", "agent-skills", "multi-agent", "visual-qa"],
+  "author": "Koenraad",
+  "homepage": "https://github.com/schmoenraad/godot-gamestudio",
+  "license": "Apache-2.0",
+  "skills": "./skills/",
+  "skillInstructions": "Use the Godot Gamestudio Supervisor to select roles. Dispatch maker tasks to Kimi's coder sub-agent, read-only reviews to explore, planning to plan, and QA commands to coder with explicit no-edit instructions.",
+  "interface": {
+    "displayName": "Godot Gamestudio",
+    "shortDescription": "A supervised Godot production team with independent review.",
+    "longDescription": "Plan, build, review, and verify Godot milestones with dynamic specialists, evidence gates, and resumable state.",
+    "developerName": "Koenraad",
+    "websiteURL": "https://github.com/schmoenraad/godot-gamestudio"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "name": "studio-smoke-v1",
+  "cases": [
+    {"id": "narrative-quest", "prompt": "Write a branching quest with dialogue and engine-ready flags.", "expected_makers": ["godot-narrative-designer"]},
+    {"id": "tilemap-level", "prompt": "Build a traversable TileMapLayer dungeon with encounters.", "expected_makers": ["godot-world-builder"]},
+    {"id": "sprite-animation", "prompt": "Create and integrate an animated player sprite sheet.", "expected_makers": ["godot-sprite-studio"], "expected_reviewers": ["godot-animation-reviewer"]},
+    {"id": "controller", "prompt": "Implement a typed GDScript player controller with collision.", "expected_makers": ["godot-gameplay-engineer"]},
+    {"id": "save-load", "prompt": "Add a versioned save and load system.", "expected_makers": ["godot-gameplay-engineer"]},
+    {"id": "hud", "prompt": "Design a responsive controller-friendly HUD.", "expected_makers": ["godot-ui-ux-designer"]},
+    {"id": "menu-accessibility", "prompt": "Build an accessible settings menu with keyboard focus.", "expected_makers": ["godot-ui-ux-designer"]},
+    {"id": "shader", "prompt": "Create a tunable damage flash shader and measure its cost.", "expected_makers": ["godot-technical-artist"]},
+    {"id": "audio", "prompt": "Design SFX buses, ducking, and music state transitions.", "expected_makers": ["godot-audio-designer"]},
+    {"id": "game-design", "prompt": "Design the combat loop, progression, and balance model.", "expected_makers": ["godot-game-designer"]},
+    {"id": "debug", "prompt": "Debug a physics regression and add a focused test.", "expected_makers": ["godot-gameplay-engineer"]},
+    {"id": "vertical-slice", "prompt": "Build a story quest, map, sprites, HUD, and gameplay for a small vertical slice.", "expected_coordinators": ["godot-creative-director"]}
+  ]
+}

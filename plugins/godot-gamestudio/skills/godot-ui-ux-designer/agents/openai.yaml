@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot UI UX Designer"
+  short_description: "Design responsive and accessible Godot UI"
+  default_prompt: "Use $godot-ui-ux-designer to design and verify this Godot interface."

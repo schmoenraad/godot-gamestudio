@@ -1,0 +1,24 @@
+{
+  "name": "godot-gamestudio",
+  "owner": {
+    "name": "Koenraad"
+  },
+  "description": "Supervised Godot production skills and specialist agents.",
+  "metadata": {
+    "description": "Supervised Godot production skills and specialist agents."
+  },
+  "plugins": [
+    {
+      "name": "godot-gamestudio",
+      "source": {
+        "source": "github",
+        "repo": "schmoenraad/godot-gamestudio"
+      },
+      "description": "A supervised multi-agent studio loop for Godot games.",
+      "version": "0.2.0",
+      "license": "Apache-2.0",
+      "category": "game-development",
+      "tags": ["godot", "agent-skills", "multi-agent", "visual-qa"]
+    }
+  ]
+}

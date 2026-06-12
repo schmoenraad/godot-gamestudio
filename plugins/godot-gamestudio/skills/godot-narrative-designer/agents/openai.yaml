@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Narrative Designer"
+  short_description: "Write engine-ready story and quests"
+  default_prompt: "Use $godot-narrative-designer to create this Godot-ready narrative deliverable."

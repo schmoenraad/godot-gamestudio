@@ -1,0 +1,22 @@
+{
+  "name": "godot-gamestudio",
+  "version": "0.2.0",
+  "description": "A supervised multi-agent studio loop for planning, building, reviewing, and verifying Godot games.",
+  "author": {
+    "name": "Koenraad"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Godot Gamestudio",
+    "shortDescription": "Supervised Godot production with specialist review.",
+    "longDescription": "Plan and build Godot milestones with automatic specialist selection, independent reviewers, resumable project state, visual evidence, and supervisor acceptance gates.",
+    "developerName": "Koenraad",
+    "category": "Creativity",
+    "capabilities": ["Read", "Write", "Interactive"],
+    "defaultPrompt": [
+      "Use $godot-gamestudio build to create this playable slice.",
+      "Use $godot-gamestudio review on the current milestone.",
+      "Use $godot-gamestudio status to assess project health."
+    ]
+  }
+}

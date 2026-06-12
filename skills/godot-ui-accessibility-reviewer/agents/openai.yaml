@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot UI Accessibility Reviewer"
+  short_description: "Review interaction, focus, and readability"
+  default_prompt: "Use $godot-ui-accessibility-reviewer to independently review this Godot interface."

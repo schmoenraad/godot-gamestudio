@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot World Builder"
+  short_description: "Build playable Godot maps and levels"
+  default_prompt: "Use $godot-world-builder to design and build this playable Godot level."

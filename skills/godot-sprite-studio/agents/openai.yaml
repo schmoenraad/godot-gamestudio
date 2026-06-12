@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Sprite Studio"
+  short_description: "Create and integrate consistent 2D art"
+  default_prompt: "Use $godot-sprite-studio to create, process, and integrate these Godot assets."

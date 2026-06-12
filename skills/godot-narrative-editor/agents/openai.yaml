@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Narrative Editor"
+  short_description: "Review story logic, voice, and continuity"
+  default_prompt: "Use $godot-narrative-editor to independently review this narrative deliverable."

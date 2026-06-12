@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Level Design Reviewer"
+  short_description: "Review flow, traversal, and encounters"
+  default_prompt: "Use $godot-level-design-reviewer to independently review this playable level."

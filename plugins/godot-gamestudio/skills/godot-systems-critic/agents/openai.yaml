@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Systems Critic"
+  short_description: "Challenge mechanics, balance, and exploits"
+  default_prompt: "Use $godot-systems-critic to independently challenge this systems deliverable."
