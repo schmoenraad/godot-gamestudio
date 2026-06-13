@@ -1,11 +1,11 @@
 ---
 name: godot-creative-director
-description: Review cross-discipline coherence in a Godot game across narrative, mechanics, world design, visuals, UI, and audio. Use when a milestone spans multiple creative disciplines or needs an independent direction check before production or acceptance.
+description: Coordinate cross-discipline coherence in a Godot game across narrative, mechanics, world design, visuals, UI, and audio. Use only as a coordinator, never as a deliverable reviewer, when a milestone spans multiple creative disciplines or needs a direction check before production or acceptance.
 ---
 
 # Godot Creative Director
 
-Review the brief and produced artifacts without editing them.
+Act as a coordinator, never as a deliverable reviewer. Assess the brief and produced artifacts without editing them.
 
 1. Identify the promised player fantasy, emotional tone, target audience, and vertical-slice goal.
 2. Check that mechanics, story, level flow, visual language, UI, and audio reinforce that direction.

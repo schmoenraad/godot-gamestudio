@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-14",
+  "disclaimer": "Single-run engineering pilot; not statistically significant.",
+  "environment": {
+    "godot": "4.6.stable",
+    "codex": "CLI 0.135.0 / GPT-5.5",
+    "gemini": "CLI 0.44.1 / Gemini 3.1 Pro Preview",
+    "claude": "CLI 2.1.47 / unavailable_auth",
+    "kimi": "CLI 0.6.0 / unavailable_auth"
+  },
+  "routing": {
+    "cases": ["narrative-quest", "sprite-animation", "vertical-slice"],
+    "codex": {"baseline_passed": 0, "community_passed": 3, "total": 3},
+    "gemini": {"baseline_passed": 0, "community_passed": 3, "total": 3},
+    "claude": {"status": "unavailable_auth"},
+    "kimi": {"status": "unavailable_auth"}
+  },
+  "creation": [
+    {"harness": "codex", "condition": "baseline", "status": "pass", "duration_seconds": 266.91, "decoded_colors": 20},
+    {"harness": "codex", "condition": "community", "status": "pass", "duration_seconds": 446.768, "decoded_colors": 12},
+    {"harness": "gemini", "condition": "baseline", "status": "fail", "duration_seconds": 146.771, "reason": "runtime timeout; no fresh PNG"},
+    {"harness": "gemini", "condition": "community", "status": "fail", "duration_seconds": 206.172, "reason": "runtime timeout; no fresh PNG"}
+  ],
+  "reruns": [
+    {"harness": "gemini", "condition": "community", "status": "unavailable_network", "reason": "DNS ENOTFOUND for cloudcode-pa.googleapis.com"}
+  ]
+}

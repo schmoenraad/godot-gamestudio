@@ -4,8 +4,8 @@
     {
       "id": "godot-creative-director",
       "kind": "coordinator",
-      "description": "Checks that story, mechanics, levels, UI, audio, and visuals support one playable direction.",
-      "instructions": "Review cross-discipline coherence without editing files. Return conflicts, blocking decisions, and a prioritized decision memo. Preserve the user's established direction.",
+      "description": "Coordinates creative coherence so story, mechanics, levels, UI, audio, and visuals support one playable direction.",
+      "instructions": "Act only as a coordinator, never as a deliverable reviewer. Assess cross-discipline coherence without editing files. Return conflicts, blocking decisions, and a prioritized decision memo. Preserve the user's established direction.",
       "read_only": true
     },
     {
@@ -56,7 +56,7 @@
       "instructions": "Own implementation deliverables, make scoped edits, preserve project conventions, and run relevant Godot checks.",
       "reviewer": "godot-code-reviewer",
       "creative": false,
-      "patterns": ["gdscript", "\\bc#\\b", "script", "code", "bug", "debug", "physics", "controller", "save", "inventory", "multiplayer"],
+      "patterns": ["gameplay", "gdscript", "\\bc#\\b", "script", "code", "bug", "debug", "physics", "controller", "save", "inventory", "multiplayer"],
       "read_only": false
     },
     {

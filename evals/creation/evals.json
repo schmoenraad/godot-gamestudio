@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "name": "studio-creation-v1",
+  "cases": [
+    {
+      "id": "visual-hud",
+      "fixture": "evals/fixtures/visual-hud",
+      "prompt": "Create a polished Godot 4 2D game scene for a 320x180 viewport. Use only native Godot drawing, Controls, scripts, and generated local data; do not use the network or external assets. The running scene must show a dark-blue arena, a central player with a clearly differentiated silhouette, a top-left HUD containing the visible word HEALTH and a colored health bar, and a visible objective panel containing the word OBJECTIVE. Use at least five visibly distinct colors. Make the project start without parse or runtime errors. At startup, save the rendered 320x180 frame to res://artifacts/result.png and exit with code 0. Run Godot yourself, inspect failures, and fix them before finishing."
+    }
+  ]
+}

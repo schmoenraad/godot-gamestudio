@@ -4,6 +4,8 @@ Godot Gamestudio turns a coding agent into a supervised Godot team. A dynamic se
 
 It supports Codex, Claude Code, Gemini CLI, and Kimi Code CLI from one repository using the open Agent Skills format.
 
+This repository brings the useful compatible lessons from GodotPrompter, Agent Sprite Forge, other public Godot skills, Agent Skills, GameDevBench, and optional GodotIQ workflows into one coherent distribution. See [SOURCES.md](SOURCES.md) for what was bundled, independently adapted, or used only as an integration reference.
+
 ## What It Adds
 
 - Automatic routing across game design, narrative, worlds, sprites, gameplay, technical art, UI, audio, and QA
@@ -74,8 +76,11 @@ Skill syntax differs slightly by harness. Claude plugin skills are namespaced, f
 python3 scripts/generate_adapters.py
 python3 -m unittest discover -s tests -v
 python3 scripts/validate_repo.py
+python3 scripts/run_benchmarks.py --suite routing --harness codex --harness gemini --case narrative-quest
 ```
 
 Set `GODOT_BIN` when Godot is not discoverable as `godot4`, `godot`, or the default macOS app path.
 
 The project is Apache-2.0 licensed. See [docs/product.md](docs/product.md) for Community and proposed Pro boundaries, and [docs/benchmarks.md](docs/benchmarks.md) for the evaluation plan.
+
+The first executable pilot and its limitations are published in [docs/benchmark-results/2026-06-14-pilot.md](docs/benchmark-results/2026-06-14-pilot.md).

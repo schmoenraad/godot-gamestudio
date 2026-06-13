@@ -1,10 +1,15 @@
 Godot Gamestudio
 Copyright 2026 Godot Gamestudio contributors
 
-This project was independently designed after reviewing public Godot agent
-workflows, including GodotPrompter, Agent Sprite Forge, haxqer/godot-skill,
-fernforestgames/agent-skill-godot, and GodotIQ. No source from repositories
-without a compatible redistribution license is included.
+This project consolidates compatible lessons from public Godot agent workflows
+into one supervised, portable toolkit. Sources include GodotPrompter, Agent
+Sprite Forge, haxqer/godot-skill, fernforestgames/agent-skill-godot, public
+Godot specialist skills, Agent Skills, GameDevBench, and GodotIQ. See
+SOURCES.md for the exact distinction between attributed bundled material,
+independent adaptation, benchmark references, and optional integrations.
+
+No source from repositories without a compatible redistribution license is
+included. GodotIQ and other separately licensed services are not redistributed.
 
 Godot is a trademark of the Godot Foundation. This project is independent and
 is not endorsed by or affiliated with the Godot Foundation.

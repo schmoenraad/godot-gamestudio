@@ -108,7 +108,11 @@ def trees_equal(left: Path, right: Path) -> bool:
 def check() -> None:
     with tempfile.TemporaryDirectory() as temp:
         candidate = Path(temp) / "repo"
-        shutil.copytree(ROOT, candidate, ignore=shutil.ignore_patterns(".git", "dist", "__pycache__", "*.pyc"))
+        shutil.copytree(
+            ROOT,
+            candidate,
+            ignore=shutil.ignore_patterns(".git", "dist", "results", ".godot", "artifacts", "__pycache__", "*.pyc"),
+        )
         generate(candidate)
         for relative in ("agents", "adapters/kimi", "plugins/godot-gamestudio"):
             if not trees_equal(ROOT / relative, candidate / relative):

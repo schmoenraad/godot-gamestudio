@@ -42,6 +42,7 @@ python3 ../../scripts/select_team.py "the user's complete request"
 ```
 
 7. Override the selector only when project evidence requires it. Keep at most four active specialists, including QA.
+   The Studio Supervisor and Creative Director are coordinators, not reviewers. When two or more creative disciplines are selected, place `godot-creative-director` in the coordinator set and never use it as a deliverable reviewer.
 8. Start the milestone with measurable criteria:
 
 ```bash
