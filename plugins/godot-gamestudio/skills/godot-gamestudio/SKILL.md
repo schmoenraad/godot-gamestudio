@@ -19,6 +19,7 @@ Act as the Studio Supervisor. Convert the request into one bounded milestone, ch
 ## Start The Studio
 
 1. Locate `project.godot` and inspect the project before defining work.
+   Run `python3 ../../scripts/studio_state.py inspect /absolute/project/root` after initialization to capture stable engine, renderer, viewport, input, language, asset, addon, GodotIQ, and Godot executable context.
 2. Use an installed lower-level Godot engineering skill when available. Otherwise inspect and run the Godot project directly.
 3. Resolve all `../../scripts/` paths relative to this `SKILL.md` before running them.
 4. Use the harness's bundled custom agents when available. For project-local Codex, Claude, or Gemini profiles, run:
@@ -57,13 +58,13 @@ Read [role-routing.md](references/role-routing.md) for ownership and pairing. Re
 
 1. Assign one accountable maker and one reviewer to every deliverable.
 2. Register the deliverable and its owned paths before edits begin.
-3. Delegate specialist work only because the user explicitly invoked Godot Gamestudio. Use the harness adapter described in [harness-adapters.md](references/harness-adapters.md).
-4. Run work in parallel only when owned files and scenes do not overlap. Stop parallel work if ownership becomes ambiguous.
-5. Give reviewers the brief, acceptance criteria, artifact paths, and runtime evidence. Do not provide maker reasoning or hidden conclusions.
+3. Generate a phase-specific brief with `studio_state.py brief` before dispatch. Give a reviewer only its generated reviewer brief and artifact access; do not append maker reasoning.
+4. Delegate specialist work only because the user explicitly invoked Godot Gamestudio. Use the harness adapter described in [harness-adapters.md](references/harness-adapters.md).
+5. Run work in parallel only when owned files and scenes do not overlap. Stop parallel work if ownership becomes ambiguous.
 6. Treat findings as recommendations until reproduced, accepted by the Supervisor, or confirmed by tests.
 7. Allow at most two focused revision rounds. Do not let reviewers expand the milestone.
-8. Run independent QA after the final review. Record `inconclusive` when tooling or evidence is incomplete.
-9. Run `studio_state.py assess`. Never announce a pass when its gate reports failures.
+8. Run independent QA after the final review. Save command output and captures under a project-relative evidence path, then record the file with `--actor godot-qa-playtester`. Record `inconclusive` when tooling or evidence is incomplete.
+9. Run `studio_state.py assess`. Never announce a pass when its gate reports failures, an artifact changed after review, or evidence is missing, stale, altered, or recorded before final review.
 
 If subagents are unavailable, perform clearly separated maker, reviewer, and QA passes in the main thread. Never claim an agent was spawned when it was not.
 

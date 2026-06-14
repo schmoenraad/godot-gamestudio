@@ -38,6 +38,13 @@ class TeamSelectionTests(unittest.TestCase):
         assignment = next(item for item in result["assignments"] if item["maker"] == "godot-sprite-studio")
         self.assertEqual(assignment["reviewer"], "godot-animation-reviewer")
 
+    def test_quick_selection_can_be_limited_to_one_maker(self):
+        result = select_team(
+            "write a quest, build its map, create sprites, and implement scripts",
+            max_makers=1,
+        )
+        self.assertEqual(len(result["assignments"]), 1)
+
 
 if __name__ == "__main__":
     unittest.main()

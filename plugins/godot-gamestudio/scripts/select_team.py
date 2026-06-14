@@ -40,7 +40,7 @@ def load_roles() -> tuple[Role, ...]:
 ROLES = load_roles()
 
 
-def select_team(request: str, max_specialists: int = 4) -> dict:
+def select_team(request: str, max_specialists: int = 4, max_makers: int | None = None) -> dict:
     text = request.lower()
     scored: list[tuple[int, int, Role]] = []
     for index, role in enumerate(ROLES):
@@ -52,6 +52,8 @@ def select_team(request: str, max_specialists: int = 4) -> dict:
     makers = [entry[2] for entry in scored]
     if not makers:
         makers = [next(role for role in ROLES if role.skill == "godot-gameplay-engineer")]
+    if max_makers is not None:
+        makers = makers[:max_makers]
 
     animation_requested = bool(re.search(r"animat|frame|sprite sheet|spritesheet", text))
     assignments = []

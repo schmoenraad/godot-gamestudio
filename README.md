@@ -11,8 +11,10 @@ This repository brings the useful compatible lessons from GodotPrompter, Agent S
 - Automatic routing across game design, narrative, worlds, sprites, gameplay, technical art, UI, audio, and QA
 - Independent maker and reviewer roles
 - Resumable `.godot-gamestudio/studio.json` milestones
-- Disjoint file ownership and bounded revision loops
-- Parse, startup, runtime, input, screenshot, animation, and regression evidence gates
+- Deterministic project inspection for engine, renderer, viewport, inputs, assets, addons, and verification tools
+- Disjoint normalized file ownership, validated role pairings, and bounded revision loops
+- Isolated maker, reviewer, and QA dispatch briefs
+- Revision-bound approvals and fresh, hashed QA evidence gates
 - Optional GodotIQ integration when the user already has it installed
 
 ## Install
@@ -84,3 +86,5 @@ Set `GODOT_BIN` when Godot is not discoverable as `godot4`, `godot`, or the defa
 The project is Apache-2.0 licensed. See [docs/product.md](docs/product.md) for Community and proposed Pro boundaries, and [docs/benchmarks.md](docs/benchmarks.md) for the evaluation plan.
 
 The first executable pilot and its limitations are published in [docs/benchmark-results/2026-06-14-pilot.md](docs/benchmark-results/2026-06-14-pilot.md).
+
+State schema v2 automatically migrates v1 milestones. Legacy evidence remains untrusted until QA records a fresh project-relative artifact.

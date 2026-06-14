@@ -19,6 +19,14 @@ class PortabilityTests(unittest.TestCase):
         self.assertEqual({item["id"] for item in roles}, {path.stem for path in (ROOT / "agents").glob("*.md")})
         subprocess.run([sys.executable, str(ROOT / "scripts" / "generate_adapters.py"), "--check"], check=True)
 
+    def test_every_maker_has_a_read_only_reviewer(self):
+        roles = json.loads((ROOT / "roles" / "roles.json").read_text(encoding="utf-8"))["roles"]
+        by_id = {item["id"]: item for item in roles}
+        for maker in (item for item in roles if item["kind"] == "maker"):
+            reviewer = by_id[maker["reviewer"]]
+            self.assertEqual(reviewer["kind"], "reviewer")
+            self.assertTrue(reviewer["read_only"])
+
     def test_all_manifests_agree(self):
         paths = [
             ROOT / ".codex-plugin" / "plugin.json",

@@ -90,7 +90,7 @@ def generate(root: Path) -> None:
     if (package / "scripts").exists():
         shutil.rmtree(package / "scripts")
     (package / "scripts").mkdir(parents=True)
-    for name in ("install_agents.py", "select_team.py", "studio_state.py"):
+    for name in ("inspect_project.py", "install_agents.py", "select_team.py", "studio_state.py"):
         shutil.copy2(root / "scripts" / name, package / "scripts" / name)
     sync_tree(root / "roles", package / "roles")
     sync_tree(root / ".codex-plugin", package / ".codex-plugin")

@@ -67,9 +67,32 @@ def validate_manifests() -> None:
         raise SystemExit("Codex marketplace does not target the generated package")
 
 
+def validate_roles() -> None:
+    registry = require_json("roles/roles.json")
+    roles = registry.get("roles", [])
+    by_id = {item.get("id"): item for item in roles}
+    if len(by_id) != len(roles) or None in by_id:
+        raise SystemExit("Role IDs must be present and unique")
+    skill_names = {path.parent.name for path in (ROOT / "skills").glob("*/SKILL.md")}
+    missing_skills = sorted(set(by_id) - skill_names)
+    if missing_skills:
+        raise SystemExit(f"Roles without matching skills: {missing_skills}")
+    for role in roles:
+        if role.get("kind") != "maker":
+            continue
+        for field in ("reviewer", "animation_reviewer"):
+            reviewer_id = role.get(field)
+            if not reviewer_id:
+                continue
+            reviewer = by_id.get(reviewer_id)
+            if not reviewer or reviewer.get("kind") != "reviewer" or not reviewer.get("read_only"):
+                raise SystemExit(f"{role['id']} has invalid {field}: {reviewer_id}")
+
+
 def main() -> None:
     validate_skills()
     validate_manifests()
+    validate_roles()
     subprocess.run([sys.executable, str(ROOT / "scripts" / "generate_adapters.py"), "--check"], check=True)
     print("Repository validation passed")
 
