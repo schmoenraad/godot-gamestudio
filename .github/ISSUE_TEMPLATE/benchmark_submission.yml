@@ -1,0 +1,52 @@
+name: Benchmark submission
+description: Contribute a reproducible Godot task or sanitized benchmark result.
+title: "[Benchmark]: "
+labels: ["benchmark"]
+body:
+  - type: markdown
+    attributes:
+      value: Public benchmarks must be reproducible and honest about unavailable tooling. Do not upload private game assets, credentials, or raw authentication homes.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Submission type
+      options: [New benchmark fixture, Result on an existing fixture, Seeded-defect reviewer test, Visual comparison, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: dimension
+    attributes:
+      label: Godot project type
+      options: [2D, 3D, UI, Narrative/data, Mixed]
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: Task and acceptance criteria
+      description: Include the exact prompt and observable pass conditions.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Godot, harness, model, Gamestudio, OS, renderer, and relevant addon versions.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result and evidence
+      description: Include repetitions, pass/fail/inconclusive counts, duration, commands, sanitized logs, and artifact links.
+    validations:
+      required: true
+  - type: checkboxes
+    id: publication
+    attributes:
+      label: Publication
+      options:
+        - label: This submission can be reproduced and published under the repository license.
+          required: true
+        - label: I removed credentials, private assets, personal paths, and provider secrets.
+          required: true

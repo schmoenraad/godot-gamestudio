@@ -15,7 +15,7 @@
         "repo": "schmoenraad/godot-gamestudio"
       },
       "description": "A supervised multi-agent studio loop for Godot games.",
-      "version": "0.4.1",
+      "version": "0.4.2",
       "license": "Apache-2.0",
       "category": "game-development",
       "tags": ["godot", "agent-skills", "multi-agent", "visual-qa"]

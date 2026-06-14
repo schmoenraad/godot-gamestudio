@@ -1,0 +1,49 @@
+name: Bug report
+description: Report reproducible orchestration, adapter, state, or verification behavior.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping make Godot Gamestudio more reliable. Remove private assets, credentials, and raw authentication data before attaching evidence.
+  - type: dropdown
+    id: harness
+    attributes:
+      label: Harness
+      options: [Codex, Claude Code, Gemini CLI, Kimi Code CLI, Other]
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Godot, Godot Gamestudio, harness, model, and operating system versions.
+      placeholder: Godot 4.6, Gamestudio 0.4.1, Codex 0.135.0, macOS 15
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: Request and expected behavior
+      description: Include the invocation mode and the result you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include the smallest reproducible sequence and sanitized errors.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Sanitized studio state, commands, logs, screenshots, or a minimal fixture repository.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, private assets, and raw provider authentication data.
+          required: true
