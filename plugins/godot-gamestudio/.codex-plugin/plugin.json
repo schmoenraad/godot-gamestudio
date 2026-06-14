@@ -1,6 +1,6 @@
 {
   "name": "godot-gamestudio",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A supervised multi-agent studio loop for planning, building, reviewing, and verifying Godot games.",
   "author": {
     "name": "Koenraad"
