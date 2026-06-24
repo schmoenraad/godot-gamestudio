@@ -1,0 +1,86 @@
+{
+  "status": "pass",
+  "input": "/Users/koenraad/plugins/godot-gamestudio/labs/sprite-skill-lab/inputs/berlin-tourist-2x2-raw.png",
+  "output": "/Users/koenraad/plugins/godot-gamestudio/labs/sprite-skill-lab/outputs/berlin-tourist-2x2-normalized.png",
+  "rows": 2,
+  "cols": 2,
+  "source_cell_width": 627,
+  "source_cell_height": 627,
+  "cell_size": 32,
+  "margin": 2,
+  "background_tolerance": 64,
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "found_content": true,
+      "source_bounds": {
+        "x": 242,
+        "y": 181,
+        "w": 142,
+        "h": 241
+      },
+      "output_bounds": {
+        "x": 8,
+        "y": 2,
+        "w": 16,
+        "h": 28
+      },
+      "scale": 0.1162
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "found_content": true,
+      "source_bounds": {
+        "x": 227,
+        "y": 185,
+        "w": 143,
+        "h": 245
+      },
+      "output_bounds": {
+        "x": 8,
+        "y": 2,
+        "w": 16,
+        "h": 28
+      },
+      "scale": 0.1143
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "found_content": true,
+      "source_bounds": {
+        "x": 242,
+        "y": 181,
+        "w": 142,
+        "h": 241
+      },
+      "output_bounds": {
+        "x": 8,
+        "y": 2,
+        "w": 16,
+        "h": 28
+      },
+      "scale": 0.1162
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "found_content": true,
+      "source_bounds": {
+        "x": 227,
+        "y": 185,
+        "w": 143,
+        "h": 245
+      },
+      "output_bounds": {
+        "x": 8,
+        "y": 2,
+        "w": 16,
+        "h": 28
+      },
+      "scale": 0.1143
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "status": "pass",
+  "path": "/Users/koenraad/plugins/godot-gamestudio/labs/sprite-skill-lab/outputs/berlin-tourist-2x2-normalized.png",
+  "rows": 2,
+  "cols": 2,
+  "cell_width": 32,
+  "cell_height": 32,
+  "cells": [
+    {
+      "content_pixels": 365,
+      "unique_colors": 340,
+      "x": 8,
+      "y": 2,
+      "w": 16,
+      "h": 28,
+      "center_x": 15.5,
+      "foot_y": 29,
+      "touches_edge": false
+    },
+    {
+      "content_pixels": 350,
+      "unique_colors": 326,
+      "x": 8,
+      "y": 2,
+      "w": 16,
+      "h": 28,
+      "center_x": 15.5,
+      "foot_y": 29,
+      "touches_edge": false
+    },
+    {
+      "content_pixels": 365,
+      "unique_colors": 342,
+      "x": 8,
+      "y": 2,
+      "w": 16,
+      "h": 28,
+      "center_x": 15.5,
+      "foot_y": 29,
+      "touches_edge": false
+    },
+    {
+      "content_pixels": 345,
+      "unique_colors": 328,
+      "x": 8,
+      "y": 2,
+      "w": 16,
+      "h": 28,
+      "center_x": 15.5,
+      "foot_y": 29,
+      "touches_edge": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "grid-divides-image",
+      "passed": true,
+      "width": 64,
+      "height": 64
+    },
+    {
+      "id": "magenta-corners",
+      "passed": true
+    },
+    {
+      "id": "all-cells-contain-sprites",
+      "passed": true,
+      "missing_cells": []
+    },
+    {
+      "id": "no-cell-edge-contact",
+      "passed": true,
+      "edge_cells": []
+    },
+    {
+      "id": "scale-drift",
+      "passed": true,
+      "value": 0.0,
+      "limit": 0.2
+    },
+    {
+      "id": "anchor-drift",
+      "passed": true,
+      "center_drift_px": 0.0,
+      "foot_drift_px": 0.0,
+      "limit_px": 3.0
+    },
+    {
+      "id": "minimum-color-range",
+      "passed": true
+    }
+  ]
+}
